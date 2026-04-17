@@ -1,72 +1,44 @@
-{
-  "name": "my-project",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint ."
-  },
-  "dependencies": {
-    "@hookform/resolvers": "^3.9.1",
-    "@vercel/analytics": "1.6.1",
-    "@radix-ui/react-accordion": "1.2.12",
-    "@radix-ui/react-alert-dialog": "1.1.15",
-    "@radix-ui/react-aspect-ratio": "1.1.8",
-    "@radix-ui/react-avatar": "1.1.11",
-    "@radix-ui/react-checkbox": "1.3.3",
-    "@radix-ui/react-collapsible": "1.1.12",
-    "@radix-ui/react-context-menu": "2.2.16",
-    "@radix-ui/react-dialog": "1.1.15",
-    "@radix-ui/react-dropdown-menu": "2.1.16",
-    "@radix-ui/react-hover-card": "1.1.15",
-    "@radix-ui/react-label": "2.1.8",
-    "@radix-ui/react-menubar": "1.1.16",
-    "@radix-ui/react-navigation-menu": "1.2.14",
-    "@radix-ui/react-popover": "1.1.15",
-    "@radix-ui/react-progress": "1.1.8",
-    "@radix-ui/react-radio-group": "1.3.8",
-    "@radix-ui/react-scroll-area": "1.2.10",
-    "@radix-ui/react-select": "2.2.6",
-    "@radix-ui/react-separator": "1.1.8",
-    "@radix-ui/react-slider": "1.3.6",
-    "@radix-ui/react-slot": "1.2.4",
-    "@radix-ui/react-switch": "1.2.6",
-    "@radix-ui/react-tabs": "1.1.13",
-    "@radix-ui/react-toast": "1.2.15",
-    "@radix-ui/react-toggle": "1.1.10",
-    "@radix-ui/react-toggle-group": "1.1.11",
-    "@radix-ui/react-tooltip": "1.2.8",
-    "autoprefixer": "^10.4.20",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "cmdk": "1.1.1",
-    "date-fns": "4.1.0",
-    "embla-carousel-react": "8.6.0",
-    "input-otp": "1.4.2",
-    "lucide-react": "^0.564.0",
-    "next": "16.2.0",
-    "next-themes": "^0.4.6",
-    "react": "^19",
-    "react-day-picker": "9.13.2",
-    "react-dom": "^19",
-    "react-hook-form": "^7.54.1",
-    "react-resizable-panels": "^2.1.7",
-    "recharts": "2.15.0",
-    "sonner": "^1.7.1",
-    "tailwind-merge": "^3.3.1",
-    "vaul": "^1.1.2",
-    "zod": "^3.24.1"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4.2.0",
-    "@types/node": "^22",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "postcss": "^8.5",
-    "tailwindcss": "^4.2.0",
-    "tw-animate-css": "1.3.3",
-    "typescript": "5.7.3"
-  }
-}
+# Noghteh Architecture Studio — نقطه
+
+A minimal black & white "under construction" page for **Noghteh Architecture Studio**.
+
+- **Site:** [noghteh.site](https://noghteh.site)
+- **Instagram:** [@noghteh.arc.studio](https://instagram.com/noghteh.arc.studio)
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| `index.html` | The full single-page site |
+| `logo.png` | Your brand logo (favicon + header). **Add this file** |
+| `logo.svg` | Fallback logo (loads automatically if `logo.png` is missing) |
+| `favicon.svg` | Fallback favicon |
+
+## Adding your logo
+
+Drop your actual logo into the repository root as `logo.png`. The page will pick it up automatically for both the header mark and the browser tab favicon. If `logo.png` is not present, the site falls back to the included `logo.svg`.
+
+## Deploying on GitHub Pages
+
+1. Create a repository named **`noghteh.site`** (or any name you prefer) on GitHub.
+2. Push these files to the `main` branch.
+3. In the repo, go to **Settings → Pages**.
+4. Under **Source**, choose **Deploy from a branch** → `main` / `/ (root)`.
+5. Save. Your site will be live at `https://<username>.github.io/<repo>/`.
+
+### Custom domain (`noghteh.site`)
+
+1. In your DNS provider, add these records pointing to GitHub Pages:
+   - `A` records: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - Or a `CNAME` record pointing to `<username>.github.io`
+2. In **Settings → Pages → Custom domain**, enter `noghteh.site` and save.
+3. Enable **Enforce HTTPS** once the certificate is provisioned.
+4. Commit a `CNAME` file containing `noghteh.site` to the repo root (GitHub creates this automatically when you set the custom domain).
+
+## Design
+
+- **Palette:** pure black background, white foreground, soft white hairlines.
+- **Typography:** Vazirmatn (Persian + Latin).
+- **Background:** animated constellation of dots connected by thin lines — an homage to *noghteh* (نقطه — "dot" in Farsi).
+- **Frame:** thin white border with corner ticks and dots, echoing architectural drafting marks.
+- **Center:** the Persian message "این صفحه درحال توسعه می باشد." with a white separator line, followed by the "نقطه" signature aligned to the left of the line.
